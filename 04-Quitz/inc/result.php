@@ -24,8 +24,26 @@ for($i=0; $i < count($user_answers);$i++){
 
 
 }
+$score_message = "правильных ответов - {$score}.";
+//$receipient = 'batumivice@yandex.ru';
+//$receipient = 'kurnosov.kurnosow@yandex.ru';
+$receipient = 'kurnosovsergej123@mail.ru';
+$sender = 'master@FReeBSD.academy';
+//$sender = 'PHPtest@PD411.academy';
+#$headers = "MINE-Version: 1.0\r\n";
+#$headers .= "Content-type: text/html; charset=utf-8\r\n";
+#$headers .= "To : {$receipient}\r\n";
+$headers .= "From: {$sender}\r\n";
+
 echo '<div class="report">';
-echo "правильных ответов - {$score}.";
+echo $score_message;
+echo mail(
+    $receipient,
+    'Результаты тестирования',
+    $score_message,
+    $headers
+    );
+
 echo '</div>';
 
 require_once __DIR__ . '/footer.php';
