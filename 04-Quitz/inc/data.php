@@ -35,6 +35,7 @@ $correct_answers =
 
 $first_name = "first_name";
 $last_name = "last_name";
+$num_answer = 1;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['btn_log'])) {
