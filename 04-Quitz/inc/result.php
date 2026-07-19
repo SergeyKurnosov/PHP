@@ -33,7 +33,7 @@ $sender = 'master@FReeBSD.academy';
 #$headers = "MINE-Version: 1.0\r\n";
 #$headers .= "Content-type: text/html; charset=utf-8\r\n";
 #$headers .= "To : {$receipient}\r\n";
-$headers .= "From: {$sender}\r\n";
+$headers = "From: {$sender}\r\n";
 
 echo '<div class="report">';
 echo $score_message;

@@ -20,7 +20,7 @@ if($number < count($questions))
 
 }
 else{
-    $response .= "<h2>Вы ответили на все вопросы</h2>";
+    $response = "<h2>Вы ответили на все вопросы</h2>";
     $response .= "<input type=\"submit\" value=\"Посмотреть результат\">";
     echo $response;
 }
