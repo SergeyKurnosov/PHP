@@ -28,12 +28,13 @@ $score_message = "правильных ответов - {$score}.";
 //$receipient = 'batumivice@yandex.ru';
 //$receipient = 'kurnosov.kurnosow@yandex.ru';
 $receipient = 'kurnosovsergej123@mail.ru';
-$sender = 'master@FReeBSD.academy';
+//$sender = 'master@FReeBSD.academy';
+$sender = 'client@PD411.academy';
 //$sender = 'PHPtest@PD411.academy';
 #$headers = "MINE-Version: 1.0\r\n";
 #$headers .= "Content-type: text/html; charset=utf-8\r\n";
 #$headers .= "To : {$receipient}\r\n";
-$headers .= "From: {$sender}\r\n";
+$headers = "From: {$sender}\r\n";
 
 echo '<div class="report">';
 echo $score_message;
