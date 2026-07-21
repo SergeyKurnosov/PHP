@@ -8,7 +8,7 @@
     }
 
     
-    ?>
+?>
 
 
 
@@ -28,7 +28,23 @@
      <?= $visitor ? 'Welcome back' : 'Hello';?>
 
     </h2>
+
+    <button OneClick="ResetCookies()">Сбросить</button>
       
+    <script>
+        function ResetCookies() {
+
+            let request = new XMLHttpRequest();
+            request.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    //todo вызвать функцию которая сбросит куки\
+                    alert(this.responseText);
+                }
+            }
+                    request.open("GET", "reset_cookies.php", true);
+                    request.send();
+        }
+    </script>
 
 
 
