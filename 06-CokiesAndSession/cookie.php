@@ -6,8 +6,6 @@
     } else {
         setcookie('return', '1', time() + 300);
     }
-
-    
 ?>
 
 

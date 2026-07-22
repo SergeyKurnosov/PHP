@@ -42,4 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $last_name = $_POST["last_name"];
     }
 }
+
+$theme = "dark_theme";
+
 ?>

@@ -2,8 +2,9 @@
 {
     background-color:darkslategray;
     color:aliceblue;
-    display:grid;
+    /*display:grid;*/
 }
+
 
 .login-card {
     width: 400px;

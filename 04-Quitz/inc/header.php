@@ -11,5 +11,6 @@ require_once __DIR__ . '/data.php';
 	<link rel="stylesheet" href="http://localhost:8080/04-Quitz/css/login.css">
 	<link rel="stylesheet" href="http://localhost:8080/04-Quitz/css/quitz.css">
 </head>
-<body>
+<body class="light_theme">
+
 
