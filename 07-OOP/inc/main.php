@@ -13,13 +13,21 @@ require_once __DIR__ . '/inheritance.php';
 $human = new Human("Vercetty","Tommy",30);
 echo $human . '<br>';
 
-//$t_student = new Student($human, "Theft", "Vice", 90, 99);
+$student1 = new Student($human, "Theft1", "Vice", 91, 94);
+$student2 = new Student($human, "Theft2", "Liberty", 92, 95);
+$student3 = new Student($human, "Theft3", "SAN", 93, 96);
 
-$student = new Student("Pinkamn", "Jessie", 20, "Chemistry", "WW_220", 90, 95);
-echo $student . '<br>';
+$group = [$student1, $student2, $student3];
 
-$graduate = new Graduate("Shreder", "Hank", 40, "Criminalistic", "OBN", 50, 70, "How to catch Hisenberg");
-echo $graduate . '<br>';
+foreach ($group as $student){
+    
+file_put_contents("log.txt", $student . "\n", FILE_APPEND);
+    echo $student . " <br>";
+}
+
+
+
+
 
 
 ?>

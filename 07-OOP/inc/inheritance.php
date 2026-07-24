@@ -97,15 +97,23 @@ class Student extends Human
     }
     //          Constructors
 
-    function __construct($first_name, $last_name, $age, $speciality, $group, $rating, $attendance){
-        parent::__construct($first_name, $last_name, $age);
+    function __construct($human, $speciality, $group, $rating, $attendance){
+        parent::__construct($human->first_name, $human->last_name, $human->age);
         $this->speciality = $speciality;
         $this->group = $group;
         $this->rating = $rating;
         $this->attendance = $attendance;
-        echo "SConstructor<br>";
-
     }
+
+    //function __construct($first_name, $last_name, $age, $speciality, $group, $rating, $attendance){
+    //    parent::__construct($first_name, $last_name, $age);
+    //    $this->speciality = $speciality;
+    //    $this->group = $group;
+    //    $this->rating = $rating;
+    //    $this->attendance = $attendance;
+    //    echo "SConstructor<br>";
+
+    //}
     function __destruct(){
         echo "SDestructor<br>"; 
     }
